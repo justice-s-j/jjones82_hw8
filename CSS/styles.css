@@ -1,0 +1,53 @@
+/* Basic reset + background color */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f6f7fb; /* required background-color */
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Container */
+.container { max-width: 980px; margin: 0 auto; padding: 1rem; }
+
+/* Simple header + nav */
+.site-header { background: #fff; border-bottom: 1px solid #e5e7eb; }
+.nav { list-style: none; padding: 0; margin: 0; display: flex; gap: 1rem; }
+.nav a { text-decoration: none; color: #222; padding: 0.4rem 0.6rem; border-radius: 8px; border: 1px solid transparent; }
+.nav a:hover { border-color: #e5e7eb; }
+
+/* Card shows the box model: border + padding + margin */
+.card {
+  background: #fff;
+  border: 1px solid #e5e7eb;   /* border */
+  padding: 1rem;               /* padding */
+  margin-top: 1rem;            /* margin */
+  border-radius: 12px;
+}
+
+/* Two heading sizes */
+h1 { color: #2563eb; } /* accent class not required; keeping it simple */
+h2 { margin-top: 0; }
+
+/* Image sizing */
+.profile {
+  display: block;
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  padding: 4px;
+}
+
+/* Simple boxed section to show border/margin/padding */
+.box {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 12px;
+}
+/* Footer */
+.site-footer { margin-top: 2rem; padding: 1rem 0; text-align: center; background: #fff; border-top: 1px solid #e5e7eb; }

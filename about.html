@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — Justice Jones</title>
+  <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+  <header>
+    <h1>About Me</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="https://www.linkedin.com/in/justice-jones03" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="box">
+      <h2>Who I Am</h2>
+      <p>I’m Justice Jones. This page has a short list, a photo, and a small table for my class assignment.</p>
+
+      <h2>Interests</h2>
+      <ul>
+        <li>Boating/Fishing </li>
+        <li>Basketball and lifting</li>
+        <li>Spending time outside</li>
+        <li>Spending time with friends and family</li>
+      </ul>
+
+      <img src="images/friends_BFD.jpg" alt="With friends" class="profile">
+    </section>
+
+    <section class="box">
+      <h2>Weekly Snapshot</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Activity</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Mon</td><td>Morning</td><td>Class</td><td>Campus</td></tr>
+          <tr><td>Wed</td><td>Morning</td><td>Class</td><td>Campus</td></tr>
+          <tr><td>Thu</td><td>Afternoon</td><td>Study / Project</td><td>Library</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Justice Jones</p>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
