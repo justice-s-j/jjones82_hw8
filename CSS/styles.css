@@ -3,13 +3,13 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f6f7fb; /* required background-color */
+  background-color: #fff8cc; /* background-color */
   color: #222;
   line-height: 1.6;
 }
 
 /* Container */
-.container { max-width: 980px; margin: 0 auto; padding: 1rem; }
+.container { max-width: 900px; margin: 0 auto; padding: 1rem; }
 
 /* Simple header + nav */
 .site-header { background: #fff; border-bottom: 1px solid #e5e7eb; }
@@ -27,7 +27,7 @@ body {
 }
 
 /* Two heading sizes */
-h1 { color: #2563eb; } /* accent class not required; keeping it simple */
+h1 { color: rgb(45, 48, 54); } 
 h2 { margin-top: 0; }
 
 /* Image sizing */
@@ -49,5 +49,18 @@ h2 { margin-top: 0; }
   margin-top: 1rem;
   border-radius: 12px;
 }
+/* Pop boxes */
+.box, .card { box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+
+figcaption {
+  font-family: "Georgia", "Times New Roman", serif; /* different font family */
+  font-style: italic;                                /* distinct style */
+  font-size: 0.95rem;                                /* slightly smaller */
+  color: #444;                                       /* a little softer than body text */
+  letter-spacing: 0.2px;                             /* tiny spacing for a caption feel */
+  margin-top: 0.4rem;
+  text-align: left;                                  /* change to center if you prefer */
+}
+
 /* Footer */
 .site-footer { margin-top: 2rem; padding: 1rem 0; text-align: center; background: #fff; border-top: 1px solid #e5e7eb; }
