@@ -17,7 +17,7 @@ body {
   border-bottom: 1px solid #e5e7eb; 
 }
 
-/* Inline nav items with separators */
+/* Create nav bar not list (inline headers) */
 .nav ul {
   list-style: none;       /* remove bullets */
   margin: 0;
@@ -75,6 +75,7 @@ h2 { margin-top: 0; }
 /* Pop boxes */
 .box, .card { box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
 
+/* Change font on captions to not match the rest */
 figcaption {
   font-family: "Georgia", "Times New Roman", serif; /* different font family */
   font-style: italic;                                /* distinct style */
