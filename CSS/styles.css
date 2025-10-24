@@ -12,18 +12,41 @@ body {
 .container { max-width: 900px; margin: 0 auto; padding: 1rem; }
 
 /* Simple header + nav */
-.site-header { background: #fff; border-bottom: 1px solid #e5e7eb; }
-.nav { list-style: none; padding: 0; margin: 0; display: flex; gap: 1rem; }
-.nav a { text-decoration: none; color: #222; padding: 0.4rem 0.6rem; border-radius: 8px; border: 1px solid transparent; }
-.nav a:hover { border-color: #e5e7eb; }
+.site-header { 
+  background: #fff; 
+  border-bottom: 1px solid #e5e7eb; 
+}
 
-/* Card shows the box model: border + padding + margin */
-.card {
-  background: #fff;
-  border: 1px solid #e5e7eb;   /* border */
-  padding: 1rem;               /* padding */
-  margin-top: 1rem;            /* margin */
-  border-radius: 12px;
+/* Inline nav items with separators */
+.nav ul {
+  list-style: none;       /* remove bullets */
+  margin: 0;
+  padding: 0;
+  display: flex;          /* put items in a row */
+  gap: 0.5rem;
+}
+
+.nav li {
+  display: flex;
+  align-items: center;
+}
+
+.nav li:not(:last-child)::after {
+  content: "|";           /* separator between items */
+  margin-left: 0.5rem;
+  color: #666;
+}
+
+.nav a {
+  text-decoration: none; 
+  color: #222; 
+  padding: 0.4rem 0.6rem; 
+  border-radius: 8px; 
+  border: 1px solid transparent; 
+}
+
+.nav a:hover { 
+  border-color: #e5e7eb; 
 }
 
 /* Two heading sizes */
